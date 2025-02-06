@@ -31,6 +31,8 @@ This project consists of two main scripts:
 - Prevents reprocessing old files  
 - Supports multiple modules dynamically  
 
+---
+
 2️⃣ Dash Web App (`analysis.py`)
 📌 What It Does
 - Loads the processed Analysis Excel files from multiple modules.
@@ -51,14 +53,15 @@ This project consists of two main scripts:
 ✅ Real-time updates using callbacks  
 ✅ Multiple performance & task metrics  
 
+---
+
 ## **📥 Installation**
 To install the required dependencies, run:
 ```bash
 pip install -r requirements.txt
 ```
-
+---
 ⚙️ Running the Data Processing Pipeline
-Run the data processing script to generate structured data:
 
 ```bash
 python raw_to_gold.py
@@ -68,12 +71,17 @@ python raw_to_gold.py
 - Logs will be displayed, indicating successful processing or errors (e.g., missing files).
 - If no new files are found, it will skip processing.
 
+---
+
 🚀 Running the Dash Web App
 Once the data processing is complete, run the interactive dashboard:
 
 ```bash
 python analysis.py
 ```
+
+---
+
 📌 Expected Output
 A web server will start at:
 ```nginx
@@ -81,12 +89,13 @@ Running at http://127.0.0.1:8050/
 ```
 Open - http://127.0.0.1:8050 - in your browser to view the dashboard.
 You will see interactive graphs:
-📊 Number of Users Over Time
-⏳ Task Durations
-👤 User-Specific Statistics
-📈 Performance Metrics
+- Number of Users Over Time
+- Task Durations
+- User-Specific Statistics
+- Performance Metrics
+
 You can use dropdown filters to:
-Select specific modules.
-Choose a year, week, or date range.
-View data by user.
-🔹 Example Dashboard Screenshot
+- Select specific modules.
+- Choose a year, week, or date range.
+- View data by user.
+
